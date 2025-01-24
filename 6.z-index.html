@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        .box{
+            background-color: aliceblue;
+        }
+        .red{
+            background-color: brown;
+            z-index: 1;
+        }
+        .green{
+            background-color: green;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            z-index: -3;
+        }
+
+        .blue{
+            background-color: blue;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            z-index: -3;
+        }
+    </style>
+</head>
+<body>
+<!--     Objetivo: Practicar cómo los elementos con position interactúan en el eje Z.
+
+
+Crea 3 cuadros <div> que se superpongan usando position: absolute.
+Usa z-index para controlar cuál está encima.
+Reto: Cambia los valores de z-index y observa cómo cambian las capas.
+
+-->
+<div class = container>
+    <div class ="box red"></div>
+    <div class = "box green"></div>
+    <div class="box blue"></div>
+</div>
+
+</body> 
+</html>
