@@ -1,44 +1,58 @@
-<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        
-.container {
-    width: 200px;
-    height: 200px;
-    background: lightgray;
-    position: relative;
-   }
-   
-   .box {
-    width: 50px;
-    height: 50px;
-    background: orange;
-   }
-   
-   .box1 { top: 0; left: 0; position: absolute; }
-   .box2 { bottom: 0; right: 0; position: absolute; }
+    <title>Position absolute</title>
 
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 360px;
+            background-color: orangered;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: solid 1px black;
+            margin: 10px;
+        }
+
+        .red {
+            background-color: brown;
+
+        }
+
+        .green {
+            background-color: olivedrab;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+        }
+
+
+        .blue {
+            background-color: cadetblue;
+
+        }
     </style>
 </head>
+
 <body>
-
-
-   <!--  Objetivo: Practicar cómo posicionar elementos absolutamente con respecto a su contenedor más cercano con posición definida.
-
-
-Crea un contenedor <div> con position: relative.
-Dentro, agrega 2 cajas pequeñas con position: absolute.
-Usa top, left, right, y bottom para colocar una caja en la esquina superior izquierda y otra en la esquina inferior derecha.
-Reto: Cambia el tamaño del contenedor y observa cómo las cajas se mantienen en sus posiciones absolutas. -->
-
-<div class="container">
-    <div class = "box"></div>
-    <div class = "box 1" ></div>
-    <div class = "box 2"></div>
-</div>
+    <div class="container">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
 </body>
+
 </html>
